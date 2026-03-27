@@ -1,0 +1,27 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int A, B, C;
+    cin >> A >> B >> C;
+
+    int arr[3] = {A, B, C};
+
+    // Sort the array
+    sort(arr, arr + 3);
+
+    // Print sorted values
+    for (int i = 0; i < 3; i++) {
+        cout << arr[i] << endl;
+    }
+
+    cout << endl;
+
+    // Print original values
+    cout << A << endl;
+    cout << B << endl;
+    cout << C << endl;
+
+    return 0;
+}
